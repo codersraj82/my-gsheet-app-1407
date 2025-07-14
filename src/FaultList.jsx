@@ -9,16 +9,16 @@ import "moment/locale/en-gb";
 
 moment.locale("en-gb");
 //const WEB_APP_URL = "/api";
-const WEB_APP_URL =
-  "https://script.google.com/macros/s/AKfycby2WxKUWyB73KV1n2Idiy487WDYojwKD2u1SZeH6x4JzwOgVSSKEiDlFKl8BXU9bx4MpQ/exec";
+// const WEB_APP_URL =
+// "https://script.google.com/macros/s/AKfycby2WxKUWyB73KV1n2Idiy487WDYojwKD2u1SZeH6x4JzwOgVSSKEiDlFKl8BXU9bx4MpQ/exec";
 // const WEB_APP_URL = import.meta.env.VITE_API_URL;
 // const WEB_APP_URL = import.meta.env.PROD
 //   ? "https://script.google.com/macros/s/AKfycby2WxKUWyB73KV1n2Idiy487WDYojwKD2u1SZeH6x4JzwOgVSSKEiDlFKl8BXU9bx4MpQ/exec"
 //   : "/api";
-// const WEB_APP_URL =
-//   import.meta.env.MODE === "production"
-//     ? "https://script.google.com/macros/s/AKfycby2WxKUWyB73KV1n2Idiy487WDYojwKD2u1SZeH6x4JzwOgVSSKEiDlFKl8BXU9bx4MpQ/exec"
-//     : "/api";
+const WEB_APP_URL =
+  import.meta.env.MODE === "production"
+    ? "https://script.google.com/macros/s/AKfycby2WxKUWyB73KV1n2Idiy487WDYojwKD2u1SZeH6x4JzwOgVSSKEiDlFKl8BXU9bx4MpQ/exec"
+    : "/api";
 
 export default function FaultList() {
   const [faults, setFaults] = useState([]);
