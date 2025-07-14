@@ -4,7 +4,7 @@ import axios from "axios";
 // const WEB_APP_URL = "/api";
 const WEB_APP_URL =
   import.meta.env.MODE === "production"
-    ? "https://script.google.com/macros/s/AKfycby2WxKUWyB73KV1n2Idiy487WDYojwKD2u1SZeH6x4JzwOgVSSKEiDlFKl8BXU9bx4MpQ/exec"
+    ? "https://script.google.com/macros/s/AKfycbydZK-1wNcApLbylJ5k_nt8kP9O-564Mi7A8tmUGOfi-9wCwMZ945yLq-_e78i0Z7xHIg/exec"
     : "/api";
 function Login({ setToken }) {
   const [username, setUsername] = useState("");
